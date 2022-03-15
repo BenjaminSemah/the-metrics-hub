@@ -1,16 +1,16 @@
-import propTypes from 'prop-types'
-import { useNavigate } from "react-router-dom";
+import propTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
 
 const Header = ({ value }) => {
   const navigate = useNavigate();
   const onClick = () => {
     navigate('/snp');
-  }
+  };
 
   return (
     <>
-      <button type="button" className="header--btn" onclick={onClick}>
+      <button type="button" className="header--btn" onClick={onClick}>
         <div>
           <h2>{value.name}</h2>
         </div>

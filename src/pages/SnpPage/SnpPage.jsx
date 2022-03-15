@@ -1,5 +1,5 @@
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import ItemList from '../../components/ItemList/ItemList';
 import NavItem from '../../components/Navbar/NavItem';
@@ -11,7 +11,7 @@ const SnpPage = () => {
   return (
     <>
       <div className="snp--page">
-        <NavItem 
+        <NavItem
           onClick={() => navigate(-1)}
           title="Snp 500 details"
         />

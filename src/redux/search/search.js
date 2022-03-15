@@ -1,7 +1,7 @@
 const ADD_TO_SEARCH = 'themetricshub/ADD_SEARCH';
 
 export const addToSearch = (payload) => (
-  { type: ADD_TO_SEARCH, payload, }
+  { type: ADD_TO_SEARCH, payload }
 );
 
 const searchReducer = (state = '', action) => {

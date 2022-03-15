@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 import Navbar from '../../components/Navbar/Navbar';
 import StockHeader from '../../components/StockHeader/StockHeader';
 import ItemList from '../../components/ItemList/ItemList';
@@ -28,8 +28,10 @@ const DetailsPage = () => {
     <>
       <div className="details--page">
         <Navbar title="company details" />
-        <StockHeader 
-          value={{ companyName, image, symbol, price }}
+        <StockHeader
+          value={{
+            companyName, image, symbol, price,
+          }}
         />
         <div className="comp--details">
           <h2>Company Stats</h2>

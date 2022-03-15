@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 import Navbar from '../../components/Navbar/Navbar';
 import Search from '../../components/Search/Search';
 import Header from '../../components/Header/Header';
@@ -6,7 +6,7 @@ import StockList from '../../components/StockList/StockList';
 import './Homepage.css';
 
 const Homepage = () => {
-  const snp = useSelector((state) => state.snp)
+  const snp = useSelector((state) => state.snp);
   const searchData = useSelector((state) => state.searchStocks);
 
   return (

@@ -9,16 +9,16 @@ const StockItem = ({ name, price, symbol }) => {
   const navigate = useNavigate();
   const data = useSelector((state) => state.company);
   const dispatch = useDispatch();
-  
+
   const onClick = () => {
     dispatch(fetchCompany(symbol));
-  }
+  };
 
   useEffect(() => {
-    if(Object.keys(data).length > 0 && data.symbol === symbol) {
+    if (Object.keys(data).length > 0 && data.symbol === symbol) {
       navigate(`/details/${symbol}`);
     }
-  }, [data])
+  }, [data]);
 
   return (
     <button

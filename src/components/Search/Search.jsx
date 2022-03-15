@@ -1,12 +1,11 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { addToSearch } from '../../redux/search/search';
-import { searchData } from '../../redux/search/search';
+import { searchData } from '../../redux/stocks/search_stocks';
 import './Search.css';
 
 const Search = () => {
   const dispatch = useDispatch();
-  
   const onSearch = (e) => {
     dispatch(addToSearch(e.target.value));
   };
@@ -16,10 +15,10 @@ const Search = () => {
 
   useEffect(() => {
     dispatch(searchData(data, searchText));
-  }, [searchText])
+  }, [searchText]);
 
   return (
-    <input 
+    <input
       className="search--bar"
       placeholder="Search..."
       onChange={onSearch}

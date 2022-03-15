@@ -8,7 +8,7 @@ import NavItem from './NavItem';
 
 const Navbar = ({ title }) => {
   const navigate = useNavigate();
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const { pathname } = useLocation();
   const company = useSelector((state) => state.company);
 
@@ -26,7 +26,7 @@ const Navbar = ({ title }) => {
   return (
     <NavItem title={title} onClick={onClick} />
   );
-}
+};
 
 Navbar.propTypes = {
   title: propTypes.string.isRequired,

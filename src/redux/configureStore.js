@@ -1,12 +1,14 @@
-import { createStore, combineReducers, applyMiddleware, compose } from "redux";
-import logger from "redux-logger";
-import thunk from "redux-thunk";
+import {
+  createStore, combineReducers, applyMiddleware, compose,
+} from 'redux';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
 
 import companyReducer from './company/company';
 import snpReducer from './stocks/snp';
-import searchStocksReducer from "./stocks/search_stocks";
+import searchStocksReducer from './stocks/search_stocks';
 import stocksReducer from './stocks/stocks';
-import searchReducer from './stocks/search_stocks';
+import searchReducer from './search/search';
 
 const reducer = combineReducers(
   {
@@ -15,7 +17,7 @@ const reducer = combineReducers(
     searchStocks: searchStocksReducer,
     stocks: stocksReducer,
     search: searchReducer,
-  }
+  },
 );
 
 const store = createStore(reducer, compose(applyMiddleware(thunk, logger)));
