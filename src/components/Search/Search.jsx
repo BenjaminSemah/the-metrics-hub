@@ -18,13 +18,17 @@ const Search = () => {
   }, [searchText]);
 
   return (
-    <input
-      className="search--bar"
-      placeholder="Search..."
-      onChange={onSearch}
-      value={searchText}
-      type="text"
-    />
+    <>
+      <div className="search--div">
+        <input
+          className="search--bar"
+          placeholder="Search..."
+          onChange={onSearch}
+          value={searchText}
+          type="text"
+        />
+      </div>
+    </>
   );
 };
 

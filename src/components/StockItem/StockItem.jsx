@@ -26,9 +26,7 @@ const StockItem = ({ name, price, symbol }) => {
       type="button"
       onClick={onClick}
     >
-      <div className="stocks--symbol">
-        <p>{symbol}</p>
-      </div>
+      <p className="stocks--abbrev">{symbol}</p>
       <div className="stocks--info">
         <p className="stocks--name">{name}</p>
         <p className="stocks--price">{price}</p>

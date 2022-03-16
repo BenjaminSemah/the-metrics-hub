@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 import StockItem from '../StockItem/StockItem';
+import './StockList.css';
 
 const StockList = ({ data }) => (
   <>

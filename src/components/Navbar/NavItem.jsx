@@ -1,25 +1,18 @@
 import propTypes from 'prop-types';
 import { IoIosArrowBack, IoIosSettings } from 'react-icons/io';
-// import { AiFillAudio } from './react-icons/ai';
 
-const NavItem = ({ onClick, title }) => (
+const NavItem = ({ onClick }) => (
   <>
-    <div>
+    <div className="navigation">
       <IoIosArrowBack className="nav--icon" onClick={onClick} />
-      <div className="nav--title">
-        <p>{title}</p>
-      </div>
-      <div>
-        {/* <AiFillAudio className="nav--icon" /> */}
-        <IoIosSettings className="nav--icon" />
-      </div>
+      <h2>The Metrics Hub</h2>
+      <IoIosSettings className="nav--icon" />
     </div>
   </>
 );
 
 NavItem.propTypes = {
   onClick: propTypes.func.isRequired,
-  title: propTypes.string.isRequired,
 };
 
 export default NavItem;

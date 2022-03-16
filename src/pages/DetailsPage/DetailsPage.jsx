@@ -22,7 +22,6 @@ const DetailsPage = () => {
   delete data.isActivelyTrading;
 
   const filteredData = { symbol, ...data };
-  // const data = useSelector((state) => state.stocks).find((stock) => stock.symbol === symbol);
 
   return (
     <>
@@ -34,7 +33,7 @@ const DetailsPage = () => {
           }}
         />
         <div className="comp--details">
-          <h2>Company Stats</h2>
+          <h2 className="stat--header">Company Stats</h2>
           <ItemList data={filteredData} />
         </div>
       </div>

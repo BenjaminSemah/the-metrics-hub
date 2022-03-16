@@ -1,3 +1,9 @@
-body {
-  margin: 0;
+.stat--header {
+  text-align: center;
+  font-weight: 700px;
+  background-color:  rgb(31, 86, 148);
+  margin-top: 0;
+  margin-bottom: -15px;
+  padding: 25px 0;
+  color: blanchedalmond;
 }

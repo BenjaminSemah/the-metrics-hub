@@ -11,12 +11,12 @@ const Homepage = () => {
 
   return (
     <>
-      <div className="page">
+      <div className="stocks--homepage">
         <Navbar title="companies" />
         <Search />
         <Header value={snp} />
         <div className="company--stocks">
-          <h2>Stats By Company</h2>
+          <h2 className="stats--header">Stats By Company</h2>
           <StockList data={searchData} />
         </div>
       </div>

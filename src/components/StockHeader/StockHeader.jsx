@@ -4,9 +4,7 @@ import './StockHeader.css';
 const StockHeader = ({ value }) => (
   <>
     <div className="stocks--header">
-      <div className="stocks--image">
-        <img src={value.image} alt={value.companyName} />
-      </div>
+      <img src={value.image} alt={value.companyName} />
       <div className="stocks--information">
         <p className="snp--logo">{value.companyName}</p>
         <p className="stocks--prices">{value.price}</p>

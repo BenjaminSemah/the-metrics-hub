@@ -10,10 +10,12 @@ const Header = ({ value }) => {
 
   return (
     <>
-      <button type="button" className="header--btn" onClick={onClick}>
-        <div>
-          <h2>{value.name}</h2>
-        </div>
+      <button
+        type="button"
+        className="header--btn"
+        onClick={onClick}
+      >
+        <h2 className="snp--name">{value.name}</h2>
         <div className="snp--info">
           <p className="snp--logo">{value.symbol}</p>
           <p className="snp--price">{value.price}</p>
