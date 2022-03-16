@@ -1,0 +1,18 @@
+.stocks--item {
+  padding: 30px 0;
+  background-color: rgb(31, 86, 148);
+  border: 1px solid white;
+  color: whitesmoke;
+}
+
+.stocks--abbrev {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 0 0;
+}
+
+.stocks--name,
+.stocks--price {
+  margin: 0;
+}

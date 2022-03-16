@@ -1,0 +1,14 @@
+.stocks--header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  background-color: rgb(133, 173, 219);
+}
+
+.stocks--information p {
+  color: whitesmoke;
+  margin: 0;
+  font-weight: 700;
+}

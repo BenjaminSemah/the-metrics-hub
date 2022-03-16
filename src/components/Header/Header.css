@@ -1,0 +1,19 @@
+.header--btn {
+  width: 100%;
+  background-color: rgb(31, 86, 148);
+  border: none;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.snp--name {
+  font-size: 40px;
+}
+
+.snp--logo,
+.snp--price {
+  margin: 5px;
+}

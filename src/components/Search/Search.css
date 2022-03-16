@@ -1,0 +1,18 @@
+.search--div {
+  background-color: rgb(133, 173, 219);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 10px;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+  border: none;
+}
