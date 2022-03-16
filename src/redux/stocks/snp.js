@@ -1,6 +1,6 @@
 const FETCH_DATA = 'themetricshub/FETCH_SNP_DATA';
 
-const apiKey = 'c123416b27ff3e3cbea7848bd271c9a6';
+const apiKey = '5f96da1a62f965a785c4d4d6ec1e9116';
 const fetchURL = `https://financialmodelingprep.com/api/v3/quote/%5EGSPC?apikey=${apiKey}`;
 
 export const fetchSnpData = () => async (dispatch) => {
