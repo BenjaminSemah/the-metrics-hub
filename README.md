@@ -5,8 +5,8 @@
 ![screenshot](./src/appScreenshot.png)
 
 
-- [Live Demo](https://stock-metrics-clint.netlify.app/)
-- [Presentation Video](https://www.loom.com/share/eba6bdff52dc4a3a805a3a98a7a7064c)
+- [Live Demo](https://themetricshub.netlify.app/)
+- [Presentation Video](https://drive.google.com/file/d/19mlq_eMxa6t21e6JeOM0OYQiVmqzujHV/view?usp=sharing)
 
 >  The Metrics HUB is a web(mobile-focused) app for checking the companies listed on the stock exchange to see their live metrics. Its data is consumed from the [Financial modelling API](https://site.financialmodelingprep.com/developer/docs/).
 
